@@ -1,28 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <title>Simple Post Generator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Blog Generator Tool</title>
 </head>
 <body>
 
-  <div class="post-generator">
-    <h2>Create a Post</h2>
-    <input type="text" id="author-name" placeholder="Author Full Name">
-    
-    
-    <input type="text" id="post-title" placeholder="Post Title">
-    <textarea id="post-text" placeholder="Post Text Content" rows="3"></textarea>
-    
-    <button onclick="generatePost()">Generate Post</button>
-
-    <div class="post-container" id="post-container">
-      <!-- Generated posts will appear here -->
+    <div class="VP">
+        <div class="header">
+            <div  id="leftNav">
+                <a href="#">ABOUT ME</a>
+            </div>
+            <div id="rightNav">
+                <a href="#">SEARCH</a>
+            </div>
+        </div>
+        <div class="authorInformation">
+            <img src="./Docs/profpic.png" alt="author profile" id="authorPic">
+            <span id="authorName">Satoru Gojo</span>
+        </div>
+        <div class="article">
+            <h1 id="title">The World of <br> Charles & Ray Emaes</h1>
+            <span id="createDate">30 September 2021</span>
+            <div id="dashLogo"></div>
+            <p><span id="category">Category: Furniture</span><br><span id="modifyDate">Last Modify: 01 november 2024</span></p>
+            <p id="firstP">With a grand sense of adventure, Charles and Ray Eames turned their curiosity and boundless enthusiasm into careers that established them as a truly great husband and wife design team. Their unique synergy led to a whole new look in furniture, clean and modern. Playful and functional. Sleek, sophisticated and beautifully simple. That was and is the "Eames look".</p>
+            <img src="./Docs/dsw-eames-dining-chair.jpg" alt="overall image" id="firstImg  mainImg">
+            <p id="secondP">That look and their relationship with Herman Miller started with moulded plywood chairs in the late 1940s and includes the world-renowned Eames lounge chair, now in the permanent collection at the Museum of Modern Art in New York.</p>
+            <p id="thirdP">Charles and Ray achieved their monumental success by approaching each project the same way: Does it interest and intrigue us? Can we make it better? Will we have "serious fun" doing it?</p>
+            <span id="quote">“Choose your corner, pick away at it carefully, intensely, & to the best of your ability, & <br>that way, you might change the world.”</span>
+            <span id="quoteAuthor">— Charles Eames</span>
+            <p id="forthP">They loved their work, which was a combination of art and science, design and architecture, process and product, style and function. "The details are not details," Charles said. "They make the product."</p>
+            <p id="fifthP">A problem-solver who encouraged experimentation among his staff, Charles once said his dream was "to have people working on useless projects. These have the germ of new concepts."</p>
+            <div class="mixedImages">
+                <img src="./Docs/ear.jpg" alt="" id="secondImg">
+                <div id="rightSideImages">
+                    <img src="./Docs/$_32.jfif" alt="" id="thirdImg">
+                    <img src="./Docs/T0654_2_700x.webp" alt="" id="forthImg">
+                </div>
+            </div>
+            <p id="sixthP">Their own concepts evolved over time, not overnight. As Charles noted about the development of the Moulded Plywood Chairs, "Yes, it was a flash of inspiration," he said, "a kind of 30-year flash."</p>
+            <p id="seventhP">With these two, one thing always seemed to lead to another. Their revolutionary work in moulded plywood led to their breakthrough work in moulded fibreglass seating. A magazine contest led to their highly innovative "Case Study" house. Their love of photography led to film making, including a huge seven-screen presentation at the Moscow World's Fair in 1959, in a dome designed by their friend and colleague, Buckminster Fuller.</p>
+            <p id="eighthP">Graphic design led to showroom design, toy collecting to toy inventing. And a wooden plank contraption for taking naps, rigged by their friend, director Billy Wilder, led to their acclaimed chaise lounge design.</p>
+            <p id="ninethP">A design critic once said that this extraordinary couple "just wanted to make the world a better place." That they did. They also made it a lot more interesting.</p>
+            <div id="dashLogo"></div>
+        </div>
+        <div class="likeSection">
+            <!-- icon -->
+             <img src="./Docs/heart-solid-108.png" alt="" id="likeIcon">
+            <span id="likeCount"></span>
+        </div>
+        <div class="commentSection">
+            <form action="">
+                <input id="commentInput" type="text" placeholder="Write a comment...">
+            </form>
+            <div class="commentBtns">
+                <div class="commentBtnsLeftSide">
+                    <button class="button-28 bookmarkBtn" role="button">Bookmark</button>
+                    <button class="button-28 shareBtn" role="button">Share</button>
+                    <button class="button-28 MoreBtn likeBtn" role="button">Like</button>
+                </div>
+                <div>
+                    <button class="button-28 commentSubmitBtn" role="button">POST COMMENT</button>
+                </div>
+            </div>
+            <div class="addingComment"></div>
+        </div>
     </div>
-  </div>
+    <Footer>
+        <div class="insideFooter">
+            <div class="leftFooter">
+                <div class="leftFooter-Top">
+                    <img src="./Docs/left-arrow-alt-regular-24.png" alt="">
+                    <span>PREVIOUS ARTICLE</span>
+                </div>
+                <span id="leftFooter-Bot">How INSTRUMENT Watches <br> Are Made</span>
+            </div>
+            <div class="rightFooter">
+                <div class="rightFooter-Top">
+                    <span>NEXT ARTICLE</span>
+                    <img src="./Docs/rightarrow.png" alt="">
+                </div>
+                <span id="rightFooter-Bot">The Corner House in <br> Kitashirakawa</span>
+                <!-- <div id="visits">Loading...</div> -->
+            </div>
+        </div>
+    </Footer>
+    
 
-  <script src="./main.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>
